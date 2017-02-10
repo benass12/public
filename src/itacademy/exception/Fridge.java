@@ -22,7 +22,7 @@ public class Fridge {
     public void take(String item) throws NoSuchItemException {
         boolean result = food.remove(item);
         if (!result) {
-            throw new NoSuchItemException(item + " not found in the fridge");
+            throw new NoSuchItemException(item + " not found ");
         }
     }
 }
